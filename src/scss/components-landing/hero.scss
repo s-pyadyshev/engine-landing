@@ -1,0 +1,262 @@
+$header-height: 80px;
+
+.hero {
+  padding-top: calc($header-height + 28px + 4px);
+  margin-top: -(calc($header-height + 28px));
+  background-image:
+    conic-gradient(from 8.92deg at 33% 80%, rgb(1, 0, 0) -22deg, rgba(240, 9, 28, 0.6) 0deg, rgb(1, 0, 0) 336.4deg, rgba(240, 9, 28, 0.6) 356deg),
+    linear-gradient($color-secondary);
+
+  @include tablet {
+    padding-top: calc($header-height + 82px);
+    margin-top: -(calc($header-height + 90px));
+    position: relative;
+    background-image:
+      conic-gradient(from 10.92deg at 29% 114%, rgba(1, 0, 0, 1) -22deg, rgba(240, 9, 28, 0.6) 0deg, rgba(1, 0, 0, 1) 338.4deg, rgba(240, 9, 28, 0.6) 360deg),
+      linear-gradient($color-secondary);
+  }
+
+  @include desktop-l {
+    padding-top: calc($header-height + 106px);
+    margin-top: -(calc($header-height + 106px));
+    background-image:
+      conic-gradient(from 9.7deg at 30% 102%, rgba(1, 0, 0, 1) -47deg, rgba(240, 9, 28, 0.6) 0deg, rgba(1, 0, 0, 1) 313.2deg, rgba(240, 9, 28, 0.6) 360deg),
+      linear-gradient($color-secondary);
+  }
+
+  &__image {
+    align-self: flex-end;
+
+    img {
+      @include desktop-l {
+        width: 300px;
+      }
+    }
+
+    @include tablet {
+      position: absolute;
+      bottom: 0px;
+      left: 42px;
+      z-index: 0;
+    }
+
+    @include desktop-l {
+      left: 64px;
+    }
+  }
+
+  &__titles {
+    @include tablet {
+      padding-top: 107px;
+      padding-left: 18px;
+    }
+
+    @include desktop-l {
+      padding-top: 36px;
+      padding-left: 0;
+    }
+
+    h2 {
+      font-family: $font-secondary;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 29px;
+      margin-bottom: 18px;
+
+      @include tablet {
+        font-size: 46px;
+        line-height: 1;
+        margin-bottom: 33px;
+      }
+
+      @include desktop-l {
+        font-size: 80px;
+        margin-bottom: 40px;
+      }
+
+      span {
+        background: linear-gradient(90deg, $color-primary 0%, rgba(232, 123, 6, 1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+
+      @include tablet {
+        font-size: 18px;
+        line-height: 29px;
+        margin-bottom: 34px;
+        max-width: 346px;
+      }
+
+      @include desktop-l {
+        font-size: 22px;
+        line-height: 35px;
+        margin-bottom: 36px;
+        max-width: 531px;
+      }
+
+      span {
+        font-weight: 700;
+        color: $color-primary;
+      }
+    }
+
+    .button {
+      font-family: $font-secondary;
+      margin-top: 19px;
+      margin-bottom: 60px;
+      width: 100%;
+
+      @include tablet {
+        margin-top: 36px;
+        width: auto;
+        font-size: 16px;
+        padding: 14px 25px;
+      }
+
+      @include desktop-l {
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 16px 25px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: $color-black;
+    padding: 46px 0 34px;
+
+    @include tablet {
+      position: relative;
+      z-index: 1;
+      background-color: transparent;
+      padding: 31px 0 50px;
+    }
+  }
+
+  &__motto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 5.5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+    max-width: 393px;
+
+    svg {
+      width: 14px;
+      height: 30px;
+    }
+
+    span {
+      margin: 0 4px;
+
+      @include desktop-l {
+        margin: 0 10px;
+      }
+    }
+
+    @include tablet {
+      display: inline-flex;
+      font-size: 10px;
+      letter-spacing: 6.2px;
+      margin-bottom: 36px;
+    }
+
+    @include desktop-l {
+      font-size: 11px;
+      letter-spacing: 6.8px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__logos {
+    align-items: center;
+
+    @include tablet {
+      flex-wrap: nowrap;
+    }
+
+    @include desktop {
+      flex-wrap: wrap;
+    }
+
+    @include desktop-l {
+      flex-wrap: nowrap;
+    }
+
+    img {
+      margin-bottom: 19px;
+      height: 28px;
+
+      @include tablet {
+        margin-bottom: 0;
+        margin-right: 14px;
+      }
+
+      @include desktop {
+        height: 55px;
+        margin-right: 95px;
+        margin-bottom: 19px;
+      }
+    }
+  }
+
+  @keyframes mouseScroll {
+    from {
+      transform: translate3d(0, 20px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__buttonWrapper {
+    position: relative;
+  }
+
+  &__mouse {
+    position: absolute;
+    right: 0;
+    top: 38px;
+    width: 45px;
+    height: 45px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+
+    svg#mouse {
+      line {
+        animation-name: mouseScroll;
+        animation: mouseScroll 1s infinite alternate;
+      }
+    }
+
+    svg#mouse-arrow {
+      width: 15px;
+      height: 15px;
+      animation: fadeIn 1s infinite alternate;
+    }
+  }
+}

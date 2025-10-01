@@ -1,0 +1,63 @@
+.accordions {
+  padding: 54px 0 37px;
+
+  @include tablet {
+    padding: 84px 0 50px;
+  }
+
+  h2 {
+    color: rgba(32, 32, 32, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 36px;
+
+    .scribble svg {
+      stroke: #F0091C;
+      transform: scale(-1.9, 0.9) translate(-3px, 0) rotate(4deg);
+
+      @include tablet {
+        transform: scale(-2.2, 1) translate(-2px, 0) rotate(2deg);
+      }
+
+      @include desktop {
+        transform: scale(-4.2, 2) translate(-1px, 2px) rotate(2deg);
+      }
+    }
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 61px;
+    }
+
+    @include desktop-l {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 96px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 54px;
+
+    @include tablet {
+      margin-bottom: 111px;
+    }
+
+    @include desktop-l {
+      margin-bottom: 77px;
+    }
+  }
+
+  &__discription {
+    font-size: 13px;
+    line-height: 16px;
+    font-style: italic;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

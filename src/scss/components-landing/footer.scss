@@ -1,0 +1,33 @@
+.footer {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: -18px;
+    height: 280px;
+    width: auto;
+
+    @include tablet {
+      height: 560px;
+    }
+
+    @include desktop {
+      height: 647px;
+    }
+  }
+
+  &__logo {
+    margin: 0 0 46px auto;
+    width: 118px;
+
+    @include tablet {
+      margin: 0 0 59px auto;
+      width: 185px;
+    }
+  }
+}

@@ -92,7 +92,7 @@
 }
 
 @keyframes fadeInLeftResponse {
-  from {
+  0% {
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
   }
@@ -102,7 +102,7 @@
     transform: translate3d(60px, 0, 0);
   }
 
-  to {
+  100% {
     opacity: 1;
     transform: translateZ(0);
   }
@@ -129,9 +129,14 @@
     transform: translate3d(0, -140px, 0);
   }
 
-  70% {
+  60% {
     opacity: 1;
     transform: translate3d(0, -140px, 0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate3d(0, -155px, 0);
   }
 
   80% {
@@ -150,15 +155,20 @@
   animation-delay: 600ms;
 }
 
-@keyframes fadeInUpAndOpacity {
+@keyframes fadeInUpResponse {
   0% {
     opacity: 0;
     transform: translate3d(0, 100px, 0);
   }
 
-  75% {
+  30% {
     opacity: 0;
     transform: translate3d(0, 100px, 0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
   }
 
   to {
@@ -167,9 +177,8 @@
   }
 }
 
-.animate__fadeInUpAndOpacity {
-  animation-name: fadeInUpAndOpacity;
-  animation-delay: 600ms;
+.animate__fadeInUpResponse {
+  animation-name: fadeInUpResponse;
 }
 
 @keyframes fadeInUpResponse {

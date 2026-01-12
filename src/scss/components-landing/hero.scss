@@ -2,14 +2,18 @@ $header-height: 80px;
 
 .hero {
   padding-top: calc($header-height + 28px + 4px);
-  margin-top: -(calc($header-height + 28px));
+  margin-top: -(calc($header-height + 27px));
   background-image:
     conic-gradient(from 8.92deg at 33% 80%, rgb(1, 0, 0) -22deg, rgba(240, 9, 28, 0.6) 0deg, rgb(1, 0, 0) 336.4deg, rgba(240, 9, 28, 0.6) 356deg),
     linear-gradient($color-secondary);
 
   @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
     padding-top: calc($header-height + 82px);
-    margin-top: -(calc($header-height + 90px));
+    margin-top: -(calc($header-height + 89px));
     position: relative;
     background-image:
       conic-gradient(from 10.92deg at 29% 114%, rgba(1, 0, 0, 1) -22deg, rgba(240, 9, 28, 0.6) 0deg, rgba(1, 0, 0, 1) 338.4deg, rgba(240, 9, 28, 0.6) 360deg),
@@ -18,7 +22,7 @@ $header-height: 80px;
 
   @include desktop-l {
     padding-top: calc($header-height + 106px);
-    margin-top: -(calc($header-height + 106px));
+    margin-top: -(calc($header-height + 105px));
     background-image:
       conic-gradient(from 9.7deg at 30% 102%, rgba(1, 0, 0, 1) -47deg, rgba(240, 9, 28, 0.6) 0deg, rgba(1, 0, 0, 1) 313.2deg, rgba(240, 9, 28, 0.6) 360deg),
       linear-gradient($color-secondary);
@@ -29,15 +33,18 @@ $header-height: 80px;
 
     img {
       object-fit: cover;
+      height: 360px;
 
       @include tablet {
-        height: 685px;
+        height: 75vh;
         margin-left: -16px;
       }
 
+      @include desktop-sm {
+        height: 90vh;
+      }
+
       @include desktop-l {
-        width: 300px;
-        height: 840px;
         margin-left: 0;
       }
     }
@@ -56,7 +63,7 @@ $header-height: 80px;
 
   &__titles {
     @include tablet {
-      padding-top: 107px;
+      padding-top: 0;
       padding-left: 42px;
     }
 
@@ -125,6 +132,7 @@ $header-height: 80px;
 
       @include tablet {
         margin-top: 36px;
+        margin-bottom: 0;
         width: auto;
         font-size: 16px;
         padding: 14px 25px;
@@ -142,6 +150,8 @@ $header-height: 80px;
   &__bottom {
     background-color: $color-black;
     padding: 46px 0 34px;
+    margin-top: auto;
+    width: 100%;
 
     @include tablet {
       position: relative;
@@ -209,18 +219,32 @@ $header-height: 80px;
     }
 
     img {
-      margin-bottom: 19px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       height: 28px;
 
       @include tablet {
+        margin-top: 0;
         margin-bottom: 0;
-        margin-right: 14px;
+        margin-right: 8px;
       }
 
       @include desktop {
         height: 55px;
-        margin-right: 95px;
+        margin-right: auto;
         margin-bottom: 19px;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        @include tablet {
+          margin-left: auto;
+        }
+      }
+
+      &:last-child {
+        @include tablet {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -274,10 +298,11 @@ $header-height: 80px;
   .container-lg {
     @include tablet {
       padding-right: 35px;
+      margin: auto 0;
     }
 
     @media (min-width: 1400px) {
-      padding-right: 70px;
+      padding-right: 140px;
     }
   }
 }

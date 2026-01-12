@@ -93,7 +93,7 @@
       margin-bottom: 120px;
     }
 
-    > *:not(:last-child) {
+    >*:not(:last-child) {
       margin-bottom: 14px;
     }
   }
@@ -121,7 +121,7 @@
         margin-bottom: -100px;
       }
 
-      + .section {
+      +.section {
         padding-top: calc((100vw * 246 / 393) / 2 + 75px);
 
         @media (min-width: 992px) {
@@ -243,6 +243,7 @@
   @include desktop-sm {
     width: 59%;
   }
+
   @include desktop {
     width: 50%;
   }
@@ -253,6 +254,7 @@
     margin-left: -0.66667%;
     padding-left: 96px;
   }
+
   @include desktop {
     margin-left: 8.3%;
     padding-left: 0px;

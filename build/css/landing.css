@@ -2022,6 +2022,11 @@ video {
   align-self: flex-end;
 }
 
+.hero__image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .hero__titles h2 {
   font-family: "Lufga", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 26px;
@@ -2173,8 +2178,8 @@ video {
 
 .switch-lang__divider {
   font-size: 12px;
-  margin-right: 4px;
-  margin-left: 4px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .menu-toggle-close,
@@ -2329,6 +2334,7 @@ video {
 
 .accordions h2 {
   color: rgb(32, 32, 32);
+  font-family: "Lufga", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -2366,7 +2372,6 @@ video {
   grid-area: subtitle;
   margin-bottom: 48px;
   line-height: 25px;
-  letter-spacing: 1px;
 }
 
 .magazineBlocks p.magazineBlocks__subtitle span {
@@ -2375,10 +2380,11 @@ video {
 }
 
 .magazineBlocks h3 {
+  font-family: "Lufga", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  letter-spacing: -1px;
-  line-height: 31px;
+  letter-spacing: 0;
+  line-height: 1.5;
 }
 
 .magazineBlocks h3 .scribble svg {
@@ -2485,6 +2491,7 @@ video {
   grid-area: description;
   display: flex;
   padding-top: 14px;
+  max-width: 475px;
 }
 
 .magazineBlocks__content > .magazineBlocks__descriptionTwo {
@@ -2535,6 +2542,10 @@ video {
   line-height: 27px;
 }
 
+.info li {
+  margin-bottom: 10px;
+}
+
 .info .button {
   font-family: "Lufga", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 12px 37px;
@@ -2582,6 +2593,7 @@ video {
 }
 
 .info__list h2 {
+  font-family: "Lufga", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 31px;
@@ -2715,7 +2727,7 @@ video {
   transition: border-color 0.2s;
   margin-bottom: 20px;
   outline: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feedback .input:focus,
@@ -2755,7 +2767,7 @@ video {
   width: auto;
   margin-top: 11px;
   padding: 12px 50px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .button--gradient {
@@ -3077,7 +3089,7 @@ video {
   transition-duration: 0.5s;
   max-height: 0;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.5;
   margin-top: 10px;
 }
 
@@ -3131,6 +3143,7 @@ video {
   }
 
   .header__lang {
+    margin-top: 4px;
     margin-right: 70px;
     margin-bottom: 0;
     margin-left: auto;
@@ -3623,7 +3636,7 @@ video {
   }
 
   .header__lang {
-    margin-right: 109px;
+    margin-right: 92px;
   }
 
   .footer__image {
@@ -3642,6 +3655,11 @@ video {
     background-image: conic-gradient(from 10.92deg at 29% 114%, rgb(1, 0, 0) -22deg, rgba(240, 9, 28, 0.6) 0deg, rgb(1, 0, 0) 338.4deg, rgba(240, 9, 28, 0.6) 360deg), linear-gradient(#202020);
   }
 
+  .hero__image img {
+    height: 685px;
+    margin-left: -16px;
+  }
+
   .hero__image {
     position: absolute;
     bottom: 0px;
@@ -3651,7 +3669,7 @@ video {
 
   .hero__titles {
     padding-top: 107px;
-    padding-left: 18px;
+    padding-left: 42px;
   }
 
   .hero__titles h2 {
@@ -3701,6 +3719,15 @@ video {
     display: flex;
   }
 
+  .hero .container-lg {
+    padding-right: 35px;
+  }
+
+  .switch-lang__link {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
   .menu-toggle-close,
   .menu-toggle-open {
     top: 60px;
@@ -3715,6 +3742,11 @@ video {
   .menu-toggle-open span {
     margin-bottom: 5px;
     width: 28px;
+  }
+
+  .menu-toggle-open,
+  .menu-toggle-close {
+    right: 64px;
   }
 
   .accordions {
@@ -3757,7 +3789,6 @@ video {
 
   .magazineBlocks h3 {
     font-size: 32px;
-    line-height: 46px;
   }
 
   .magazineBlocks__titleOne {
@@ -4022,7 +4053,6 @@ video {
 
   .accordion__content {
     font-size: 20px;
-    line-height: 24px;
   }
 
   .accordion__toggle-icon svg {
@@ -4346,11 +4376,6 @@ video {
     margin: 0;
     max-width: 49%;
     padding-right: 130px;
-  }
-
-  .switch-lang__link {
-    font-size: 13px;
-    line-height: 19px;
   }
 
   .switch-lang__divider {
@@ -4971,6 +4996,10 @@ video {
     padding-right: 140px;
     padding-left: 140px;
   }
+
+  .hero .container-lg {
+    padding-right: 70px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -5024,8 +5053,9 @@ video {
     margin-bottom: 19px;
   }
 
-  .switch-lang__link {
-    font-size: 15px;
+  .menu-toggle-open,
+  .menu-toggle-close {
+    right: 120px;
   }
 
   .menu-address {
@@ -5079,6 +5109,7 @@ video {
   }
 
   .magazineBlocks p.magazineBlocks__subtitle {
+    font-size: 22px;
     line-height: 36px;
     margin-bottom: 69px;
     margin-top: 0;
@@ -5092,7 +5123,6 @@ video {
 
   .magazineBlocks h3 {
     font-size: 44px;
-    line-height: 66px;
   }
 
   .magazineBlocks__titleOne {
@@ -5100,7 +5130,7 @@ video {
   }
 
   .magazineBlocks__titleOne .scribble svg {
-    transform: scale(4.5, -2.5) translate(-2px, -4px) rotate(0deg);
+    transform: scale(4.7, -2.7) translate(0, -2px) rotate(0deg);
   }
 
   .magazineBlocks__titleTwo .scribble svg {
@@ -5352,7 +5382,7 @@ video {
   }
 
   .feedback h2 .scribble svg {
-    transform: scale(3.2, 2.1) translate(2px, 0) rotate(4deg);
+    transform: scale(1) translate(-100px, 0) rotate(4deg);
   }
 
   .feedback p {
@@ -5432,6 +5462,8 @@ video {
 
   .hero__image img {
     width: 300px;
+    height: 840px;
+    margin-left: 0;
   }
 
   .hero__image {

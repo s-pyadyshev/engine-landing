@@ -111,3 +111,14 @@
     display: none;
   }
 }
+
+.menu-toggle-open,
+.menu-toggle-close {
+  @include tablet {
+    right: 64px;
+  }
+
+  @include desktop {
+    right: 120px;
+  }
+}

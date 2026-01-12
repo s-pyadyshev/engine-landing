@@ -54,7 +54,7 @@
       }
 
       @include desktop {
-        transform: scale(3.2, 2.1) translate(2px, 0) rotate(4deg);
+        transform: scale(1) translate(-100px, 0) rotate(4deg);
       }
     }
   }
@@ -115,7 +115,7 @@
     transition: border-color $transition-duration;
     margin-bottom: 20px;
     outline: none;
-    z-index: 2;
+    z-index: 1;
 
     @include tablet {
       padding: 13px 26px 13px 22px;
@@ -149,7 +149,7 @@
     width: auto;
     margin-top: 11px;
     padding: 12px 50px;
-    z-index: 2;
+    z-index: 1;
 
     @include tablet {
       margin-top: 25px;

@@ -153,13 +153,14 @@ $mobile-menu-background-color: $color-primary;
 
 .header__lang {
   @media (min-width: 440px) {
+    margin-top: 4px;
     margin-right: 70px;
     margin-bottom: 0;
     margin-left: auto;
   }
 
   @include tablet {
-    margin-right: 109px;
+    margin-right: 92px;
   }
 }
 

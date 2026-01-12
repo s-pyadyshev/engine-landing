@@ -12,12 +12,11 @@
   p {
     font-size: 13px;
     line-height: 21px;
-    
+
     &.magazineBlocks__subtitle {
       grid-area: subtitle;
       margin-bottom: 48px;
       line-height: 25px;
-      letter-spacing: 1px;
 
       @include tablet {
         line-height: 30px;
@@ -26,6 +25,7 @@
       }
 
       @include desktop {
+        font-size: 22px;
         line-height: 36px;
         margin-bottom: 69px;
         margin-top: 0;
@@ -50,19 +50,18 @@
   }
 
   h3 {
+    font-family: $font-secondary;
     font-size: 26px;
     font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 31px;
+    letter-spacing: 0;
+    line-height: 1.5;
 
     @include tablet {
       font-size: 32px;
-      line-height: 46px;
     }
 
     @include desktop {
       font-size: 44px;
-      line-height: 66px;
     }
 
     .scribble svg {
@@ -92,7 +91,7 @@
       }
 
       @include desktop {
-        transform: scale(4.5, -2.5) translate(-2px, -4px) rotate(0deg);
+        transform: scale(4.7, -2.7) translate(0, -2px) rotate(0deg);
       }
     }
   }
@@ -132,7 +131,7 @@
       "contentTwo contentTwo contentTwo contentTwo contentTwo contentTwo contentTwo ."
       "contentTree contentTree contentTree contentTree contentTree contentTree contentTree contentTree"
       "titleTwo titleTwo titleTwo titleTwo titleTwo titleTwo titleTwo titleTwo";
-    
+
     @include tablet {
       margin-bottom: 169px;
       grid-template-columns: repeat(10, 10%);
@@ -168,7 +167,7 @@
     grid-template-areas:
       "images"
       "description";
-    
+
     @include tablet {
       margin-bottom: 78px;
     }
@@ -248,7 +247,7 @@
         "image";
     }
 
-    & > img {
+    &>img {
       grid-area: image;
     }
   }
@@ -273,6 +272,7 @@
     grid-area: description;
     display: flex;
     padding-top: 14px;
+    max-width: 475px;
 
     @include tablet {
       padding-top: 36px;

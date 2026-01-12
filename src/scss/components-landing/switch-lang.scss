@@ -12,13 +12,9 @@
     letter-spacing: 0.2px;
     text-decoration-color: transparent;
 
-    @include laptop {
-      font-size: 13px;
-      line-height: 19px;
-    }
-
-    @include desktop {
+    @include tablet {
       font-size: 15px;
+      line-height: 19px;
     }
 
     &.focus,
@@ -34,6 +30,7 @@
     color: $color-secondary;
 
     &__link {
+
       &.focus,
       &:active,
       &:hover,
@@ -46,8 +43,8 @@
 
 .switch-lang__divider {
   font-size: 12px;
-  margin-right: 4px;
-  margin-left: 4px;
+  margin-right: 5px;
+  margin-left: 5px;
 
   @include laptop {
     font-size: 14px;

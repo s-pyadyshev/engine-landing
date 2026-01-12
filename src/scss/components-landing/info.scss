@@ -43,6 +43,10 @@
     }
   }
 
+  li {
+    margin-bottom: 10px;
+  }
+
   .button {
     font-family: $font-secondary;
     padding: 12px 37px;
@@ -146,6 +150,7 @@
     }
 
     h2 {
+      font-family: $font-secondary;
       font-size: 26px;
       font-weight: 700;
       line-height: 31px;

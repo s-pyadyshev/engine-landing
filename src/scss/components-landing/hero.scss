@@ -28,8 +28,17 @@ $header-height: 80px;
     align-self: flex-end;
 
     img {
+      object-fit: cover;
+
+      @include tablet {
+        height: 685px;
+        margin-left: -16px;
+      }
+
       @include desktop-l {
         width: 300px;
+        height: 840px;
+        margin-left: 0;
       }
     }
 
@@ -48,7 +57,7 @@ $header-height: 80px;
   &__titles {
     @include tablet {
       padding-top: 107px;
-      padding-left: 18px;
+      padding-left: 42px;
     }
 
     @include desktop-l {
@@ -257,6 +266,18 @@ $header-height: 80px;
       width: 15px;
       height: 15px;
       animation: fadeIn 1s infinite alternate;
+    }
+  }
+}
+
+.hero {
+  .container-lg {
+    @include tablet {
+      padding-right: 35px;
+    }
+
+    @media (min-width: 1400px) {
+      padding-right: 70px;
     }
   }
 }

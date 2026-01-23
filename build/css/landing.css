@@ -1772,6 +1772,7 @@ video {
 
 .mobile-menu-active .header {
   position: fixed;
+  z-index: 3;
 }
 
 .header::before {
@@ -2772,6 +2773,10 @@ video {
   margin-top: 11px;
   padding: 12px 50px;
   z-index: 1;
+}
+
+.feedback__form {
+  z-index: 2;
 }
 
 .button--gradient {
@@ -3792,7 +3797,7 @@ video {
   }
 
   .accordions__list {
-    margin-bottom: 111px;
+    margin-bottom: 70px;
   }
 
   .accordions__discription {
@@ -3801,7 +3806,7 @@ video {
   }
 
   .magazineBlocks {
-    padding: 127px 0 121px;
+    padding: 64px 0 121px;
   }
 
   .magazineBlocks p.magazineBlocks__subtitle {
@@ -4071,7 +4076,7 @@ video {
 
   .accordion__header {
     padding-bottom: 14px;
-    margin-right: 36px;
+    margin-right: 24px;
   }
 
   .accordion__title {
@@ -4086,6 +4091,13 @@ video {
   .accordion__toggle-icon svg {
     height: 15px;
     width: 15px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .feedback__form {
+    max-width: 70%;
+    margin-left: auto;
   }
 }
 

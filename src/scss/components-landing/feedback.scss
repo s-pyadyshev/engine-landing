@@ -162,3 +162,12 @@
     }
   }
 }
+
+.feedback__form {
+  z-index: 2;
+
+  @media (min-width: 768px) and (orientation: landscape) {
+    max-width: 70%;
+    margin-left: auto;
+  }
+}

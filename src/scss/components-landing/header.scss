@@ -12,6 +12,7 @@ $mobile-menu-background-color: $color-primary;
 
   .mobile-menu-active & {
     position: fixed;
+    z-index: 3;
   }
 
   &::before {

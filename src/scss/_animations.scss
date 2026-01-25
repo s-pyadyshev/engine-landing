@@ -116,27 +116,48 @@
 @keyframes fadeInRightResponse {
   0% {
     opacity: 0;
-    transform: translate3d(100%, -140px, 0);
+    transform: translate3d(100%, -70px, 0);
+
+    @include tablet {
+      transform: translate3d(100%, -140px, 0);
+    }
   }
 
   20% {
     opacity: 1;
-    transform: translate3d(-60px, -140px, 0);
+    transform: translate3d(-60px, -70px, 0);
+
+    @include tablet {
+
+      transform: translate3d(-60px, -140px, 0);
+    }
   }
 
   30% {
     opacity: 1;
-    transform: translate3d(0, -140px, 0);
+    transform: translate3d(0, -70px, 0);
+
+    @include tablet {
+      transform: translate3d(0, -140px, 0);
+    }
   }
 
   60% {
     opacity: 1;
-    transform: translate3d(0, -140px, 0);
+    transform: translate3d(0, -70px, 0);
+
+    @include tablet {
+      transform: translate3d(0, -140px, 0);
+    }
   }
 
   70% {
     opacity: 1;
-    transform: translate3d(0, -155px, 0);
+    transform: translate3d(0, -85px, 0);
+
+    @include tablet {
+      transform: translate3d(0, -155px, 0);
+    }
   }
 
   80% {

@@ -1,351 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta color-scheme="dark light">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_GB">
-    <meta property="og:title" content="Landing">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Landing">
-    <title>Landing</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="./css/landing.css?v=1769174009157">
-</head>
-
-<body class="landing">
-    <div class="page-wrapper">
-        <header class="header">
-            <div class="container-lg">
-                <div class="header__inner">
-                    <a class="header__logo" href="/">
-                        <img class="logo" src="images/logo-engine.svg" alt="logo-engine" width="249" height="46">
-                        <img class="logo logo-dark" src="images/logo-engine-dark.svg" alt="logo-engine" width="249" height="46">
-                    </a>
-                    <div class="header__lang">
-                        <div class="switch-lang">
-                            <a class="switch-lang__link" href="/" title="Nederlands"><span class="visible-mobile">NL</span><span class="hidden-mobile">Nederlands</span></a><span class="switch-lang__divider">/</span>
-                            <a class="switch-lang__link active" href="/" title="English"><span class="visible-mobile">EN</span><span class="hidden-mobile">English</span></a>
-                        </div>
-                    </div>
-                    <div class="header__menu">
-                        <div class="container">
-                            <div class="header__menu-wrap">
-                                <div class="header__menu-title"><span class="scribble">
-                                        Menu<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.2 45.1" width="128" height="45">
-                                            <path d="M70.76 44.6c11.04-.61 21.93-2.76 32.38-6.39a86.93 86.93 0 0 0 14.72-6.4c3.99-2.29 7.72-5.46 9.22-9.95 3.29-9.85-6.97-14.57-14.64-16.65-10.96-2.98-22.3-4.15-33.62-4.53-21.72-.71-45.3.2-65.16 9.98C6.12 14.37-2.97 22.93 1.84 32.18c4.07 7.84 15.02 9.09 22.77 10.22 25.42 3.63 51.33 1.6 75.87-5.97" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;stroke:#d8ff01" />
-                                        </svg></span></div>
-                                <nav class="navbar" aria-label="main navigation">
-                                    <ul class="navbar__list">
-                                        <li>
-                                            <a class="navbar__link" href="/">Home</a>
-                                        </li>
-                                        <li>
-                                            <a class="navbar__link" href="/work">Work</a>
-                                        </li>
-                                        <li>
-                                            <a class="navbar__link" href="/about">About us</a>
-                                        </li>
-                                        <li>
-                                            <a class="navbar__link" href="/services">Services</a>
-                                        </li>
-                                        <li>
-                                            <a class="navbar__link" href="/Blogs">Blogs</a>
-                                        </li>
-                                        <li>
-                                            <a class="navbar__link" href="/contact">Contact</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="menu-copyright menu-copyright--mobile">
-                                <img src="images/logo-bno-lid.svg" alt="BNO Lid" width="68" height="40">
-                                <p>Wij zijn lid van de Beroeporganisatie Nederlandse Ontwerpers</p>
-                            </div>
-                            <div class="menu-address">
-                                <div class="menu-address__item">
-                                    <img src="images/menu-img-1.jpg" alt="" width="352" height="228">
-                                </div>
-                                <div class="menu-address__item">
-                                    <div class="menu-address__location">
-                                        <p>Engine Branding &amp; Identity Nieuwpoortkade 2a 1055 RX Amsterdam</p>
-                                        <a href="tel:+31206060920" title="phone">+31 20 60 60 920</a>
-                                        <a href="mailto:info@enginebranding.nl" title="email">info@enginebranding.nl</a>
-                                    </div>
-                                    <img src="images/menu-img-2.jpg" alt="" width="245" height="293">
-                                </div>
-                                <div class="menu-address__item">
-                                    <img src="images/menu-img-3.jpg" alt="" width="342" height="222">
-                                    <div class="menu-copyright">
-                                        <img src="images/logo-bno-lid.svg" alt="BNO Lid" width="68" height="40">
-                                        <p>Wij zijn lid van de Beroeporganisatie Nederlandse Ontwerpers</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header__menu-toggle">
-                        <button class="menu-toggle-open js-open-menu" type="button"><span></span><span></span><span></span></button>
-                        <button class="menu-toggle-close js-close-menu" type="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="38.064" height="35.354" viewBox="0 0 38.064 35.354">
-                                <g id="Component_26_1" data-name="Component 26 – 1" transform="translate(3.533 3.533)">
-                                    <line id="Line_1" data-name="Line 1" y1="28.289" x2="30.636" fill="none" stroke="#202020" stroke-linecap="round" stroke-width="5" />
-                                    <line id="Line_2" data-name="Line 2" x2="31" y2="28" transform="translate(0 0.289)" fill="none" stroke="#202020" stroke-linecap="round" stroke-width="5" />
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <main class="main">
-            <div class="section background-secondary">
-                <div class="hero">
-                    <div class="row container-lg">
-                        <div class="hero__image col-5 col-xl-6 offset-xl-2">
-                            <img src="images/impact.png">
-                        </div>
-                        <div class="hero__titles col-7 col-md-8 offset-md-4 col-xl-7 offset-xl-5">
-                            <h2 data-scrollspy="animate__fadeInLeftResponse">Join the <span>leaders.</span></h2>
-                            <p data-scrollspy="animate__fadeInUpResponse" data-durationTime="500" data-delayTime="3000">Maak het verschil met een sterke visuele boodschap. <span>Claim nu jouw gratis design </span>en ervaar wat wij voor jouw organisatie kunnen betekenen.</p>
-                            <h2 data-scrollspy="animate__fadeInRightResponse" data-durationTime="3000">Vergroot je <span>impact.</span></h2>
-                            <div class="hero__buttonWrapper">
-                                <a class="button button--gradient text-center" href="#form" data-scrollspy="animate__fadeInUpResponse" data-delayTime="6400" data-durationTime="300">Claim nu jouw impact voucher!</a><span class="hero__mouse" data-scrollspy="animate__fadeIn" data-delayTime="6400" data-durationTime="300">
-                                    <svg id="mouse" xmlns="http://www.w3.org/2000/svg" width="30" height="47" viewBox="0 0 30 47" fill="none">
-                                        <rect x="1.00195" y="1.97461" width="28" height="43.0635" rx="14" stroke="white" stroke-width="2" fill="none" />
-                                        <line x1="14.9004" y1="14.251" x2="14.9004" y2="17.0889" stroke="white" stroke-width="4" stroke-linecap="round" />
-                                    </svg>
-                                    <svg id="mouse-arrow">
-                                        <use xlink:href="./images/sprites.svg#mouse-arrow"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero__bottom">
-                        <div class="container-lg">
-                            <div class="hero__motto" data-scrollspy="animate__fadeIn" data-delayTime="3600" data-durationTime="300">
-                                <svg>
-                                    <use xlink:href="./images/sprites.svg#wreath-left"></use>
-                                </svg><span>een greep uit onze leaders</span>
-                                <svg>
-                                    <use xlink:href="./images/sprites.svg#wreath-right"></use>
-                                </svg>
-                            </div>
-                            <div class="hero__logos row">
-                                <img class="col-4 col-md-auto" src="images/logo-care.svg" alt="logo care." data-scrollspy="animate__fadeInUpResponse" data-delayTime="3600" data-durationTime="300">
-                                <img class="col-4 col-md-auto" src="images/logo-wetlands.svg" alt=" logo wetlands." data-scrollspy="animate__fadeInUpResponse" data-delayTime="4000" data-durationTime="300">
-                                <img class="col-4 col-md-auto" src="images/logo-women.svg" alt="logo women." data-scrollspy="animate__fadeInUpResponse" data-delayTime="4400" data-durationTime="300">
-                                <img class="col-3 col-md-auto" src="images/logo-jef.svg" alt="logo jeugd educatie fonds." data-scrollspy="animate__fadeInUpResponse" data-delayTime="4800" data-durationTime="300">
-                                <img class="col-3 col-md-auto" src="images/logo-soh.svg" alt="logo fonds slachtofferhulp." data-scrollspy="animate__fadeInUpResponse" data-delayTime="5200" data-durationTime="300">
-                                <img class="col-3 col-md-auto" src="images/logo-rode-kruis.svg" alt="logo rode kruis." data-scrollspy="animate__fadeInUpResponse" data-delayTime="5600" data-durationTime="300">
-                                <img class="col-3 col-md-auto" src="images/logo-kngf.svg" alt="logo kngf." data-scrollspy="animate__fadeInUpResponse" data-delayTime="6000" data-durationTime="300">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section background-muted magazineBlocks">
-                <div class="container-lg">
-                    <div class="magazineBlocks__gridWrapper">
-                        <p class="magazineBlocks__subtitle" data-scrollspy="animate__fadeInDownResponse">Ook in deze uitdagende tijden helpen onze designs <span>non-profits</span> en <span>hulporganisaties</span></p>
-                        <h3 class="magazineBlocks__titleOne" data-scrollspy="animate__fadeInLeftResponse">En dat levert concrete <span class="scribble">resultaten<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy>
-                                    <path d="M98.1 58.52c-13.56 4.1-27.68 6-41.84 5.65-7.14-.19-14.26-.91-21.3-2.17-6.71-1.19-13.55-2.44-20.3-5.61-3.5-1.62-6.71-3.81-9.49-6.48-1.79-1.5-3.2-3.41-4.09-5.57-.96-2.23-.72-4.8.62-6.82 2.28-2.98 4.98-5.61 8-7.84 2.75-2.17 5.7-4.06 8.82-5.64 12.49-6.35 26.1-7.81 39.55-8.23 7.25-.22 14.5.05 21.71.82 6.7.71 13.77 1.24 20.53 6.01 3.44 2.44 5.83 6.08 6.71 10.2 1.06 4.72.39 9.65-1.89 13.92-1.86 3.35-4.5 6.2-7.69 8.33a45.85 45.85 0 0 1-9.24 4.88 90.75 90.75 0 0 1-41.08 6.86 95.63 95.63 0 0 1-21.1-3.7c-3.43-.97-6.73-2.36-9.82-4.15a30.802 30.802 0 0 1-9.23-8.04A18.47 18.47 0 0 1 3.5 36.9c.89-4.61 3.22-7.25 5.32-9.57a69.06 69.06 0 0 1 16.8-13.59c11.97-6.85 24.8-9.73 37.66-11.81 3.14-.51 6.28-.97 9.43-1.43" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px" />
-                                </svg></span> op!</h3>
-                        <div class="magazineBlocks__contentOne" data-scrollspy="animate__fadeInDownResponse" data-delayTime="1000">
-                            <div class="magazineBlocks__imagesGroup">
-                                <img src="images/magazine-0.webp" alt="magazine.">
-                                <img src="images/magazine-1.webp" alt="magazine.">
-                            </div>
-                            <div class="magazineBlocks__descriptionOne">
-                                <p>Met het <b>Nederlandse Rode Kruis</b> en <b>CARE Nederland</b> wisten we fondsen binnen te halen van de Nationale Postcode Loterij.</p>
-                            </div>
-                        </div>
-                        <div class="magazineBlocks__content magazineBlocks__contentTwo" data-scrollspy="animate__fadeInUpResponse" data-delayTime="1500">
-                            <img src="images/magazine-2.webp" alt="magazine.">
-                            <div class="magazineBlocks__descriptionTwo">
-                                <p><b>WO=MEN</b> kreeg via onze ontwerpen toegang tot nieuwe overheidssubsidie.</p>
-                            </div>
-                        </div>
-                        <div class="magazineBlocks__content magazineBlocks__contentThree" data-scrollspy="animate__fadeInDownResponse" data-delayTime="2000">
-                            <img src="images/magazine-3.webp" alt="magazine.">
-                            <div class="magazineBlocks__descriptionThree">
-                                <p>En met de Building with Nature publicaties won <b>Wetlands International</b> een <b>World Restoration Flagship Award</b> van de Verenigde Naties.</p>
-                                <img src="images/word-restoration-flagship.webp" alt="magazine.">
-                            </div>
-                        </div>
-                        <h3 class="magazineBlocks__titleTwo" data-scrollspy="animate__fadeInLeftResponse" data-delayTime="2000">Wat wij voor hun doen, kunnen we ook voor <span class="scribble">&nbsp;jou<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy>
-                                    <path d="M98.1 58.52c-13.56 4.1-27.68 6-41.84 5.65-7.14-.19-14.26-.91-21.3-2.17-6.71-1.19-13.55-2.44-20.3-5.61-3.5-1.62-6.71-3.81-9.49-6.48-1.79-1.5-3.2-3.41-4.09-5.57-.96-2.23-.72-4.8.62-6.82 2.28-2.98 4.98-5.61 8-7.84 2.75-2.17 5.7-4.06 8.82-5.64 12.49-6.35 26.1-7.81 39.55-8.23 7.25-.22 14.5.05 21.71.82 6.7.71 13.77 1.24 20.53 6.01 3.44 2.44 5.83 6.08 6.71 10.2 1.06 4.72.39 9.65-1.89 13.92-1.86 3.35-4.5 6.2-7.69 8.33a45.85 45.85 0 0 1-9.24 4.88 90.75 90.75 0 0 1-41.08 6.86 95.63 95.63 0 0 1-21.1-3.7c-3.43-.97-6.73-2.36-9.82-4.15a30.802 30.802 0 0 1-9.23-8.04A18.47 18.47 0 0 1 3.5 36.9c.89-4.61 3.22-7.25 5.32-9.57a69.06 69.06 0 0 1 16.8-13.59c11.97-6.85 24.8-9.73 37.66-11.81 3.14-.51 6.28-.97 9.43-1.43" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px" />
-                                </svg></span> doen!</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="section background-secondary info">
-                <div class="container-lg">
-                    <div class="info__gridWrapper">
-                        <img class="info__imageOne" src="images/info-0.webp" data-scrollspy="animate__fadeInLeftResponse">
-                        <div class="info__list" data-scrollspy="animate__fadeInRight">
-                            <h2><span>Gratis design boost </span>voor <span class="scribble">&nbsp;nieuwe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy>
-                                        <path d="M34.574 35.77a208.073 208.073 0 0 0 39.09-3.43c5.815-1.075 11.95-1.97 17.615-4.16 3.509-1.36 7.662-4.484 7.722-9.76.055-5.025-4.076-7.26-7.29-8.416A78.325 78.325 0 0 0 73.375 6.19a168.73 168.73 0 0 0-36.706.105C26.672 7.433 16.434 10.06 7.55 16.651 5.284 18.337-.043 21.496.805 25.646c.963 4.697 7.357 5.729 10.38 6.429 12.603 2.923 26.158 2.732 39.032 2.984 12.667.252 26.12.819 38.615-3.313 2.526-.836 9.737-2.334 9.34-7.347-.497-6.209-8.81-8.919-12.61-10.006-14.157-4.05-29.36-4.8-43.961-4.695-.711.004-1.23" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1px" />
-                                    </svg></span> opdrachtgevers</h2>
-                            <p>Wil jij direct impact maken? Als nieuwe opdrachtgever krijg je van ons één volle dag gratis design. Dat betekent:</p>
-                            <ul>
-                                <li>een flyer, campagnevisual of ander grafisch ontwerp in één dag</li>
-                                <li>directe creatieve slagkracht voor jouw project</li>
-                                <li>en een eerste stap naar een langdurige samenwerking.</li>
-                            </ul>
-                            <a class="button button--gradient text-center" href="#form">Claim nu jouw impact voucher!</a>
-                        </div>
-                        <img class="info__imageTwo" src="images/info-1.webp" alt="info." data-scrollspy="animate__fadeInUpResponse">
-                        <div class="info__faq" data-scrollspy="animate__fadeInDownResponse">
-                            <h3 data-scrollspy="animate__fadeInDown" data-delayTime="900"><span class="scribble">&nbsp;Waarom<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy>
-                                        <path d="M78.2747 44.1242C90.57 43.5094 102.71 41.3593 114.345 37.7358C120.02 36.0611 125.51 33.916 130.743 31.3283C135.183 29.0366 139.343 25.8651 141.019 21.3717C144.687 11.5134 133.254 6.79702 124.705 4.7115C112.454 1.90897 99.8827 0.391832 87.2428 0.190473C63.0556 -0.528672 36.7972 0.381046 14.6639 10.1614C6.25631 13.877 -3.86083 22.4408 1.49601 31.7022C6.03344 39.5445 18.2311 40.8018 26.8683 41.9237C55.1898 45.5622 84.057 43.5246 111.398 35.9571C111.985 35.7929 113.621 35.3051 113.382 34.4997C113.15 33.7254 111.39 33.9795 110.847" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px" />
-                                    </svg></span> kiezen voor Engine?</h3>
-                            <ul>
-                                <li data-scrollspy="animate__fadeInRight" data-delayTime="1900" data-durationTime="500">Wij hebben ruim 15 jaar ervaring in het werken met non-profits, stichtingen en organisaties die impact willen maken.</li>
-                                <li data-scrollspy="animate__fadeInRight" data-delayTime="2400" data-durationTime="500">Bewezen succes in fondsenwerving, campagnes en award-winnende projecten.</li>
-                                <li data-scrollspy="animate__fadeInRight" data-delayTime="2900" data-durationTime="500">Een compact en betrokken team dat begrijpt dat jouw missie voorop staat.</li>
-                            </ul>
-                        </div>
-                        <img class="info__imageTree" src="images/team.jpg" alt="team." data-scrollspy="animate__fadeInUpResponse">
-                    </div>
-                </div>
-            </div>
-            <div class="section background-muted accordions">
-                <div class="container-lg">
-                    <h2>De<span class="scribble">&nbsp;voorwaarden <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy>
-                                <path d="M98.1 58.52c-13.56 4.1-27.68 6-41.84 5.65-7.14-.19-14.26-.91-21.3-2.17-6.71-1.19-13.55-2.44-20.3-5.61-3.5-1.62-6.71-3.81-9.49-6.48-1.79-1.5-3.2-3.41-4.09-5.57-.96-2.23-.72-4.8.62-6.82 2.28-2.98 4.98-5.61 8-7.84 2.75-2.17 5.7-4.06 8.82-5.64 12.49-6.35 26.1-7.81 39.55-8.23 7.25-.22 14.5.05 21.71.82 6.7.71 13.77 1.24 20.53 6.01 3.44 2.44 5.83 6.08 6.71 10.2 1.06 4.72.39 9.65-1.89 13.92-1.86 3.35-4.5 6.2-7.69 8.33a45.85 45.85 0 0 1-9.24 4.88 90.75 90.75 0 0 1-41.08 6.86 95.63 95.63 0 0 1-21.1-3.7c-3.43-.97-6.73-2.36-9.82-4.15a30.802 30.802 0 0 1-9.23-8.04A18.47 18.47 0 0 1 3.5 36.9c.89-4.61 3.22-7.25 5.32-9.57a69.06 69.06 0 0 1 16.8-13.59c11.97-6.85 24.8-9.73 37.66-11.81 3.14-.51 6.28-.97 9.43-1.43" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px" />
-                            </svg></span></h2>
-                    <div class="accordions__list row">
-                        <div class="col-12 col-xl-5">
-                            <ul class="accordion-list">
-                                <li class="accordion-list__item">
-                                    <div class="accordion">
-                                        <div class="accordion__header">
-                                            <button class="accordion__toggle" data-accordion="data-accordion" aria-expanded="false">
-                                                <h3 class="accordion__title">Wie kan meedoen?</h3>
-                                                <div class="accordion__toggle-icon">
-                                                    <svg>
-                                                        <use xlink:href="./images/sprites.svg#triangle-down"></use>
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                        </div>
-                                        <div class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate consequatur temporibus dicta quisquam aperiam illo harum alias eligendi adipisci non eum sit odio, beatae iusto ab qui, odit quia recusandae id quo corporis? Hic, porro eaque! Atque, corporis fuga magni neque voluptate deserunt delectus perspiciatis quibusdam quia nulla quis odio consequuntur pariatur nostrum quod mollitia! Odit laborum dolorem iure neque optio vitae amet ex sequi consectetur doloribus deserunt possimus pariatur facilis facere rerum a laudantium molestiae, voluptatum commodi eius omnis, quas ratione. Iure minus voluptas consequatur! Rem debitis numquam atque ducimus ipsam dignissimos rerum dolores hic quas blanditiis. Possimus.</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-xl-5 offset-xl-1">
-                            <ul class="accordion-list">
-                                <li class="accordion-list__item">
-                                    <div class="accordion">
-                                        <div class="accordion__header">
-                                            <button class="accordion__toggle" data-accordion="data-accordion" aria-expanded="false">
-                                                <h3 class="accordion__title">Hoe claim ik mijn plek?</h3>
-                                                <div class="accordion__toggle-icon">
-                                                    <svg>
-                                                        <use xlink:href="./images/sprites.svg#triangle-down"></use>
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                        </div>
-                                        <div class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. e neque optio vitae amet ex sequi consectetur doloribus deserunt possimus pariatur facilis facere rerum a laudantium molestiae, voluptatum commodi eius omnis, quas ratione. Iure minus voluptas consequatur! Rem debitis numquam atque ducimus ipsam dignissimos rerum dolores hic quas blanditiis. Possimus.</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-xl-5">
-                            <ul class="accordion-list">
-                                <li class="accordion-list__item">
-                                    <div class="accordion">
-                                        <div class="accordion__header">
-                                            <button class="accordion__toggle" data-accordion="data-accordion" aria-expanded="false">
-                                                <h3 class="accordion__title">Tot wanneer kan ik meedoen?</h3>
-                                                <div class="accordion__toggle-icon">
-                                                    <svg>
-                                                        <use xlink:href="./images/sprites.svg#triangle-down"></use>
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                        </div>
-                                        <div class="accordion__content">Quam voluptate consequatur temporibus dicta quisquam aperiam illo harum alias eligendi adipisci non eum sit odio, beatae iusto ab qui, odit quia recusandae id quo corporis? Hic, porro eaque! Atque, corporis fuga magni neque voluptate deserunt delectus perspiciatis quibusdam quia nulla quis odio consequuntur pariatur nostrum quod mollitia! Odit laborum dolorem iure neque optio vitae amet ex sequi consectetur doloribus deserunt possimus pariatur facilis facere rerum a laudantium molestiae, voluptatum commodi eius omnis, quas ratione. Iure minus voluptas consequatur! Rem debitis numquam atque ducimus ipsam dignissimos rerum dolores hic quas blanditiis. Possimus.</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-xl-5 offset-xl-1">
-                            <ul class="accordion-list">
-                                <li class="accordion-list__item">
-                                    <div class="accordion">
-                                        <div class="accordion__header">
-                                            <button class="accordion__toggle" data-accordion="data-accordion" aria-expanded="false">
-                                                <h3 class="accordion__title">Wat krijg ik?</h3>
-                                                <div class="accordion__toggle-icon">
-                                                    <svg>
-                                                        <use xlink:href="./images/sprites.svg#triangle-down"></use>
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                        </div>
-                                        <div class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate consequatur temporibus dicta quisquam aperiam illo harum alias eligendi adipisci non eum sit odio, beatae iusto ab qui, odit quia recusandae id quo corporis? Hic, porro eaque! Atque, corporis fuga magni neque voluptate deserunt delectus perspiciatis quibusdam quia nulla quis odio consequuntur pariatur nostrum quod mollitia! Odit laborum dolorem iure neque optio vitae amet ex sequi consectetur doloribus deserunt possimus pariatur facilis facere rerum a laudantium molestiae, voluptatum commodi eius omnis, quas ratione. Iure minus voluptas consequatur! Rem debitis numquam atque ducimus ipsam dignissimos rerum dolores hic quas blanditiis. Possimus.</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="accordions__discription">Deze aanbieding is geldig tot 31 december 2025</p>
-                </div>
-            </div>
-            <div class="section background-secondary feedback" id="form">
-                <div class="container-lg">
-                    <div class="feedback__wrapper row">
-                        <h2>Ben jij klaar om<br /> het<span class="scribble">&nbsp;verschil<svg width="181" height="53" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg" data-scrollspy>
-                                    <path fill="none" d="M60.7168 50.916C78.0519 51.2259 95.7774 49.5133 113.024 48.4042C130.27 47.295 151.172 46.0554 166.821 37.1661C176.456 31.6856 184.298 20.1865 172.818 13.0424C162.598 6.68124 146.239 4.91968 134.298 3.51695C118.897 1.70645 103.354 1.18451 87.8285 1.67383C63.3783 2.45675 35.3441 5.89832 13.2538 16.2393C6.99044 19.1753 1.25938 23.4487 1.50779 30.6091C1.82717 39.3843 12.7747 42.2061 20.635 44.2612C39.1234 49.0729 60.433 50.1168 79.4892 50.965C100.834 51.911 125.409 48.29 145.494 41.5047C154.614 38.422 168.347 32.2402 167.229 21.524C166.111 10.8079 147.108 9.58455 137.971 8.23076C123.457 6.07774 109.493 5.50686 94.8193 5.50686C83.162 5.50686 69.8014 3.85948 58.6409 6.7791" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>&nbsp;te maken?</span></h2>
-                        <div class="feedback__formWraper row">
-                            <p class="col-12 col-xl-4">Het kost je één minuut om je voucher te claimen. En levert je een dag designpower op. Meld je aan via het formulier en wij plannen snel een intake met je.</p>
-                            <form class="feedback__form col-12 col-xl-8 offset-xl-1" action="/" method="post">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input class="input full-width" type="text" name="name" placeholder="Naam*" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <input class="input full-width" type="email" name="email" placeholder="E-mailadres*" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <input class="input full-width" type="tel" name="tel" placeholder="Telefoonnummer*" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea class="textarea full-width" name="message" placeholder="Bericht (niet verplicht)*" rows="3" required></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="button button--gradient full-width text-center" type="submit">Verzenden
-                                            <div class="hero__image col-5 col-xl-6 offset-xl-2"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="footer">
-                            <img class="footer__image" src="images/hero-form.png" alt="footer image.">
-                            <img class="footer__logo" src="images/logo-engine.svg" alt="logo Engine." width="249" height="46">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-    <script src="./js/landing.js?v=1769174009157"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta color-scheme="dark light">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="en_GB">
+		<meta property="og:title" content="Landing">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Landing">
+		<title>Landing</title><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="./css/landing.css?v=1769357478736">
+	</head>
+	<body class="landing">
+		<div class="page-wrapper">
+			<header class="header">
+				<div class="container-lg">
+					<div class="header__inner"><a class="header__logo" href="/"><img class="logo" src="images/logo-engine.svg" alt="logo-engine" width="249" height="46"><img class="logo logo-dark" src="images/logo-engine-dark.svg" alt="logo-engine" width="249" height="46"></a>
+						<div class="header__lang">
+							<div class="switch-lang"><a class="switch-lang__link" href="/" title="Nederlands"><span class="visible-mobile">NL</span><span class="hidden-mobile">Nederlands</span></a><span class="switch-lang__divider">/</span><a class="switch-lang__link active" href="/" title="English"><span class="visible-mobile">EN</span><span class="hidden-mobile">English</span></a></div>
+						</div>
+						<div class="header__menu">
+							<div class="container">
+								<div class="header__menu-wrap">
+									<div class="header__menu-title"><span class="scribble">
+											Menu<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.2 45.1" width="128" height="45"><path d="M70.76 44.6c11.04-.61 21.93-2.76 32.38-6.39a86.93 86.93 0 0 0 14.72-6.4c3.99-2.29 7.72-5.46 9.22-9.95 3.29-9.85-6.97-14.57-14.64-16.65-10.96-2.98-22.3-4.15-33.62-4.53-21.72-.71-45.3.2-65.16 9.98C6.12 14.37-2.97 22.93 1.84 32.18c4.07 7.84 15.02 9.09 22.77 10.22 25.42 3.63 51.33 1.6 75.87-5.97" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;stroke:#d8ff01"/></svg></span></div>
+									<nav class="navbar" aria-label="main navigation">
+										<ul class="navbar__list">
+											<li><a class="navbar__link" href="/">Home</a></li>
+											<li><a class="navbar__link" href="/work">Work</a></li>
+											<li><a class="navbar__link" href="/about">About us</a></li>
+											<li><a class="navbar__link" href="/services">Services</a></li>
+											<li><a class="navbar__link" href="/Blogs">Blogs</a></li>
+											<li><a class="navbar__link" href="/contact">Contact</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="menu-copyright menu-copyright--mobile"><img src="images/logo-bno-lid.svg" alt="BNO Lid" width="68" height="40">
+									<p>Wij zijn lid van de Beroeporganisatie Nederlandse Ontwerpers</p>
+								</div>
+								<div class="menu-address">
+									<div class="menu-address__item"><img src="images/menu-img-1.jpg" alt="" width="352" height="228"></div>
+									<div class="menu-address__item">
+										<div class="menu-address__location">
+											<p>Engine Branding &amp; Identity Nieuwpoortkade 2a 1055 RX Amsterdam</p><a href="tel:+31206060920" title="phone">+31 20 60 60 920</a><a href="mailto:info@enginebranding.nl" title="email">info@enginebranding.nl</a>
+										</div><img src="images/menu-img-2.jpg" alt="" width="245" height="293">
+									</div>
+									<div class="menu-address__item"><img src="images/menu-img-3.jpg" alt="" width="342" height="222">
+										<div class="menu-copyright"><img src="images/logo-bno-lid.svg" alt="BNO Lid" width="68" height="40">
+											<p>Wij zijn lid van de Beroeporganisatie Nederlandse Ontwerpers</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__menu-toggle">
+							<button class="menu-toggle-open js-open-menu" type="button"><span></span><span></span><span></span></button>
+							<button class="menu-toggle-close js-close-menu" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="38.064" height="35.354" viewBox="0 0 38.064 35.354">
+<g id="Component_26_1" data-name="Component 26 – 1" transform="translate(3.533 3.533)">
+<line id="Line_1" data-name="Line 1" y1="28.289" x2="30.636" fill="none" stroke="#202020" stroke-linecap="round" stroke-width="5"/>
+<line id="Line_2" data-name="Line 2" x2="31" y2="28" transform="translate(0 0.289)" fill="none" stroke="#202020" stroke-linecap="round" stroke-width="5"/>
+</g>
+</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<div class="section background-secondary">
+					<div class="hero">
+						<div class="row container-lg">
+							<div class="hero__image col-5 col-xl-6 offset-xl-2"><img src="images/impact.png"></div>
+							<div class="hero__titles col-7 col-md-8 offset-md-4 col-xl-7 offset-xl-5">
+								<h2 data-scrollspy="animate__fadeInLeftResponse">Join the <span>leaders.</span></h2>
+								<p data-scrollspy="animate__fadeInUpResponse" data-durationTime="500" data-delayTime="3000">Maak het verschil met een sterke visuele boodschap. <span>Claim nu jouw gratis design </span>en ervaar wat wij voor jouw organisatie kunnen betekenen.</p>
+								<h2 data-scrollspy="animate__fadeInRightResponse" data-durationTime="3000">Vergroot je <span>impact.</span></h2>
+								<div class="hero__buttonWrapper"><a class="button button--gradient text-center" href="#form" data-scrollspy="animate__fadeInUpResponse" data-delayTime="6400" data-durationTime="300">Claim nu jouw impact voucher!</a><span class="hero__mouse" data-scrollspy="animate__fadeIn" data-delayTime="6400" data-durationTime="300"><svg id="mouse" xmlns="http://www.w3.org/2000/svg" width="30" height="47" viewBox="0 0 30 47" fill="none">
+<rect x="1.00195" y="1.97461" width="28" height="43.0635" rx="14" stroke="white" stroke-width="2" fill="none"/>
+<line x1="14.9004" y1="14.251" x2="14.9004" y2="17.0889" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>
+										<svg id="mouse-arrow">
+											<use xlink:href="./images/sprites.svg#mouse-arrow"></use>
+										</svg></span></div>
+							</div>
+						</div>
+						<div class="hero__bottom">
+							<div class="container-lg">
+								<div class="hero__motto" data-scrollspy="animate__fadeIn" data-delayTime="3600" data-durationTime="300">
+									<svg>
+										<use xlink:href="./images/sprites.svg#wreath-left"></use>
+									</svg><span>een greep uit onze leaders</span>
+									<svg>
+										<use xlink:href="./images/sprites.svg#wreath-right"></use>
+									</svg>
+								</div>
+								<div class="hero__logos row"><img class="col-4 col-md-auto" src="images/logo-care.svg" alt="logo care." data-scrollspy="animate__fadeInUpResponse" data-delayTime="3600" data-durationTime="300"><img class="col-4 col-md-auto" src="images/logo-wetlands.svg" alt=" logo wetlands." data-scrollspy="animate__fadeInUpResponse" data-delayTime="4000" data-durationTime="300"><img class="col-4 col-md-auto" src="images/logo-women.svg" alt="logo women." data-scrollspy="animate__fadeInUpResponse" data-delayTime="4400" data-durationTime="300"><img class="col-3 col-md-auto" src="images/logo-jef.svg" alt="logo jeugd educatie fonds." data-scrollspy="animate__fadeInUpResponse" data-delayTime="4800" data-durationTime="300"><img class="col-3 col-md-auto" src="images/logo-soh.svg" alt="logo fonds slachtofferhulp."  data-scrollspy="animate__fadeInUpResponse" data-delayTime="5200" data-durationTime="300"><img class="col-3 col-md-auto" src="images/logo-rode-kruis.svg" alt="logo rode kruis." data-scrollspy="animate__fadeInUpResponse" data-delayTime="5600" data-durationTime="300"><img class="col-3 col-md-auto" src="images/logo-kngf.svg" alt="logo kngf." data-scrollspy="animate__fadeInUpResponse" data-delayTime="6000" data-durationTime="300"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section background-muted magazineBlocks">
+					<div class="container-lg">
+						<div class="magazineBlocks__gridWrapper">
+							<p class="magazineBlocks__subtitle" data-scrollspy="animate__fadeInDownResponse">Ook in deze uitdagende tijden helpen onze designs <span>non-profits</span> en <span>hulporganisaties</span></p>
+							<h3 class="magazineBlocks__titleOne" data-scrollspy="animate__fadeInLeftResponse">En dat levert concrete <span class="scribble">resultaten<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy><path d="M98.1 58.52c-13.56 4.1-27.68 6-41.84 5.65-7.14-.19-14.26-.91-21.3-2.17-6.71-1.19-13.55-2.44-20.3-5.61-3.5-1.62-6.71-3.81-9.49-6.48-1.79-1.5-3.2-3.41-4.09-5.57-.96-2.23-.72-4.8.62-6.82 2.28-2.98 4.98-5.61 8-7.84 2.75-2.17 5.7-4.06 8.82-5.64 12.49-6.35 26.1-7.81 39.55-8.23 7.25-.22 14.5.05 21.71.82 6.7.71 13.77 1.24 20.53 6.01 3.44 2.44 5.83 6.08 6.71 10.2 1.06 4.72.39 9.65-1.89 13.92-1.86 3.35-4.5 6.2-7.69 8.33a45.85 45.85 0 0 1-9.24 4.88 90.75 90.75 0 0 1-41.08 6.86 95.63 95.63 0 0 1-21.1-3.7c-3.43-.97-6.73-2.36-9.82-4.15a30.802 30.802 0 0 1-9.23-8.04A18.47 18.47 0 0 1 3.5 36.9c.89-4.61 3.22-7.25 5.32-9.57a69.06 69.06 0 0 1 16.8-13.59c11.97-6.85 24.8-9.73 37.66-11.81 3.14-.51 6.28-.97 9.43-1.43" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/></svg></span> op!</h3>
+							<div class="magazineBlocks__contentOne" data-scrollspy="animate__fadeInDownResponse" data-delayTime="1000">
+								<div class="magazineBlocks__imagesGroup"><img src="images/magazine-0.webp" alt="magazine."><img src="images/magazine-1.webp" alt="magazine."></div>
+								<div class="magazineBlocks__descriptionOne">
+									<p>Met het <b>Nederlandse Rode Kruis</b> en <b>CARE Nederland</b> wisten we fondsen binnen te halen van de Nationale Postcode Loterij.</p>
+								</div>
+							</div>
+							<div class="magazineBlocks__content magazineBlocks__contentTwo" data-scrollspy="animate__fadeInUpResponse" data-delayTime="1500"><img src="images/magazine-2.webp" alt="magazine.">
+								<div class="magazineBlocks__descriptionTwo">
+									<p><b>WO=MEN</b> kreeg via onze ontwerpen toegang tot nieuwe overheidssubsidie.</p>
+								</div>
+							</div>
+							<div class="magazineBlocks__content magazineBlocks__contentThree" data-scrollspy="animate__fadeInDownResponse" data-delayTime="2000"><img src="images/magazine-3.webp" alt="magazine.">
+								<div class="magazineBlocks__descriptionThree">
+									<p>En met de Building with Nature publicaties won <b>Wetlands International</b> een <b>World Restoration Flagship Award</b> van de Verenigde Naties.</p><img src="images/word-restoration-flagship.webp" alt="magazine.">
+								</div>
+							</div>
+							<h3 class="magazineBlocks__titleTwo" data-scrollspy="animate__fadeInLeftResponse" data-delayTime="2000">Wat wij voor hun doen, kunnen we ook voor <span class="scribble">&nbsp;jou<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy><path d="M98.1 58.52c-13.56 4.1-27.68 6-41.84 5.65-7.14-.19-14.26-.91-21.3-2.17-6.71-1.19-13.55-2.44-20.3-5.61-3.5-1.62-6.71-3.81-9.49-6.48-1.79-1.5-3.2-3.41-4.09-5.57-.96-2.23-.72-4.8.62-6.82 2.28-2.98 4.98-5.61 8-7.84 2.75-2.17 5.7-4.06 8.82-5.64 12.49-6.35 26.1-7.81 39.55-8.23 7.25-.22 14.5.05 21.71.82 6.7.71 13.77 1.24 20.53 6.01 3.44 2.44 5.83 6.08 6.71 10.2 1.06 4.72.39 9.65-1.89 13.92-1.86 3.35-4.5 6.2-7.69 8.33a45.85 45.85 0 0 1-9.24 4.88 90.75 90.75 0 0 1-41.08 6.86 95.63 95.63 0 0 1-21.1-3.7c-3.43-.97-6.73-2.36-9.82-4.15a30.802 30.802 0 0 1-9.23-8.04A18.47 18.47 0 0 1 3.5 36.9c.89-4.61 3.22-7.25 5.32-9.57a69.06 69.06 0 0 1 16.8-13.59c11.97-6.85 24.8-9.73 37.66-11.81 3.14-.51 6.28-.97 9.43-1.43" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/></svg></span> doen!</h3>
+						</div>
+					</div>
+				</div>
+				<div class="section background-secondary info">
+					<div class="container-lg">
+						<div class="info__gridWrapper"><img class="info__imageOne" src="images/info-0.webp" data-scrollspy="animate__fadeInLeftResponse">
+							<div class="info__list" data-scrollspy="animate__fadeInRight">
+								<h2><span>Gratis design boost </span>voor <span class="scribble">&nbsp;nieuwe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy><path d="M34.574 35.77a208.073 208.073 0 0 0 39.09-3.43c5.815-1.075 11.95-1.97 17.615-4.16 3.509-1.36 7.662-4.484 7.722-9.76.055-5.025-4.076-7.26-7.29-8.416A78.325 78.325 0 0 0 73.375 6.19a168.73 168.73 0 0 0-36.706.105C26.672 7.433 16.434 10.06 7.55 16.651 5.284 18.337-.043 21.496.805 25.646c.963 4.697 7.357 5.729 10.38 6.429 12.603 2.923 26.158 2.732 39.032 2.984 12.667.252 26.12.819 38.615-3.313 2.526-.836 9.737-2.334 9.34-7.347-.497-6.209-8.81-8.919-12.61-10.006-14.157-4.05-29.36-4.8-43.961-4.695-.711.004-1.23" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1px"/></svg></span> opdrachtgevers</h2>
+								<p>Wil jij direct impact maken? Als nieuwe opdrachtgever krijg je van ons één volle dag gratis design. Dat betekent:</p>
+								<ul>
+									<li>een flyer, campagnevisual of ander grafisch ontwerp in één dag</li>
+									<li>directe creatieve slagkracht voor jouw project</li>
+									<li>en een eerste stap naar een langdurige samenwerking.</li>
+								</ul><a class="button button--gradient text-center" href="#form">Claim nu jouw impact voucher!</a>
+							</div><img class="info__imageTwo" src="images/info-1.webp" alt="info." data-scrollspy="animate__fadeInUpResponse">
+							<div class="info__faq" data-scrollspy="animate__fadeInDownResponse">
+								<h3 data-scrollspy="animate__fadeInDown" data-delayTime="900"><span class="scribble">&nbsp;Waarom<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy><path d="M78.2747 44.1242C90.57 43.5094 102.71 41.3593 114.345 37.7358C120.02 36.0611 125.51 33.916 130.743 31.3283C135.183 29.0366 139.343 25.8651 141.019 21.3717C144.687 11.5134 133.254 6.79702 124.705 4.7115C112.454 1.90897 99.8827 0.391832 87.2428 0.190473C63.0556 -0.528672 36.7972 0.381046 14.6639 10.1614C6.25631 13.877 -3.86083 22.4408 1.49601 31.7022C6.03344 39.5445 18.2311 40.8018 26.8683 41.9237C55.1898 45.5622 84.057 43.5246 111.398 35.9571C111.985 35.7929 113.621 35.3051 113.382 34.4997C113.15 33.7254 111.39 33.9795 110.847" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/></svg></span> kiezen voor Engine?</h3>
+								<ul>
+									<li data-scrollspy="animate__fadeInRight" data-delayTime="1900" data-durationTime="500">Wij hebben ruim 15 jaar ervaring in het werken met non-profits, stichtingen en organisaties die impact willen maken.</li>
+									<li data-scrollspy="animate__fadeInRight" data-delayTime="2400" data-durationTime="500">Bewezen succes in fondsenwerving, campagnes en award-winnende projecten.</li>
+									<li data-scrollspy="animate__fadeInRight" data-delayTime="2900" data-durationTime="500">Een compact en betrokken team dat begrijpt dat jouw missie voorop staat.</li>
+								</ul>
+							</div><img class="info__imageTree" src="images/team.jpg" alt="team." data-scrollspy="animate__fadeInUpResponse">
+						</div>
+					</div>
+				</div>
+				<div class="section background-muted accordions">
+					<div class="container-lg">
+						<h2>De<span class="scribble">&nbsp;voorwaarden <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.01 74.54" width="124" height="36" data-scrollspy><path d="M98.1 58.52c-13.56 4.1-27.68 6-41.84 5.65-7.14-.19-14.26-.91-21.3-2.17-6.71-1.19-13.55-2.44-20.3-5.61-3.5-1.62-6.71-3.81-9.49-6.48-1.79-1.5-3.2-3.41-4.09-5.57-.96-2.23-.72-4.8.62-6.82 2.28-2.98 4.98-5.61 8-7.84 2.75-2.17 5.7-4.06 8.82-5.64 12.49-6.35 26.1-7.81 39.55-8.23 7.25-.22 14.5.05 21.71.82 6.7.71 13.77 1.24 20.53 6.01 3.44 2.44 5.83 6.08 6.71 10.2 1.06 4.72.39 9.65-1.89 13.92-1.86 3.35-4.5 6.2-7.69 8.33a45.85 45.85 0 0 1-9.24 4.88 90.75 90.75 0 0 1-41.08 6.86 95.63 95.63 0 0 1-21.1-3.7c-3.43-.97-6.73-2.36-9.82-4.15a30.802 30.802 0 0 1-9.23-8.04A18.47 18.47 0 0 1 3.5 36.9c.89-4.61 3.22-7.25 5.32-9.57a69.06 69.06 0 0 1 16.8-13.59c11.97-6.85 24.8-9.73 37.66-11.81 3.14-.51 6.28-.97 9.43-1.43" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/></svg></span></h2>
+						<div class="accordions__list row">
+							<div class="col-12 col-xl-5">
+								<ul class="accordion-list">
+									<li class="accordion-list__item">
+										<div class="accordion">
+											<div class="accordion__header">
+												<button class="accordion__toggle" data-accordion="data-accordion" aria-expanded="false">
+													<h3 class="accordion__title">Wie kan meedoen?</h3>
+													<div class="accordion__toggle-icon">
+														<svg>
+															<use xlink:href="./images/sprites.svg#triangle-down"></use>
+														</svg>
+													</div>
+												</button>
+											</div>
+											<div class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate consequatur temporibus dicta quisquam aperiam illo harum alias eligendi adipisci non eum sit odio, beatae iusto ab qui, odit quia recusandae id quo corporis? Hic, porro eaque! Atque, corporis fuga magni neque voluptate deserunt delectus perspiciatis quibusdam quia nulla quis odio consequuntur pariatur nostrum quod mollitia! Odit laborum dolorem iure neque optio vitae amet ex sequi consectetur doloribus deserunt possimus pariatur facilis facere rerum a laudantium molestiae, voluptatum commodi eius omnis, quas ratione. Iure minus voluptas consequatur! Rem debitis numquam atque ducimus ipsam dignissimos rerum dolores hic quas blanditiis. Possimus.</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-xl-5 offset-xl-1">
+								<ul class="accordion-list">
+									<li class="accordion-list__item">
+										<div class="accordion">
+											<div class="accordion__header">
+												<button class="accordion__toggle" data-accordion="data-accordion" aria-expanded="false">
+													<h3 class="accordion__title">Hoe claim ik mijn plek?</h3>
+													<div class="accordion__toggle-icon">
+														<svg>
+															<use xlink:href="./images/sprites.svg#triangle-down"></use>
+														</svg>
+													</div>
+												</button>
+											</div>
+											<div class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. e neque optio vitae amet ex sequi consectetur doloribus deserunt possimus pariatur facilis facere rerum a laudantium molestiae, voluptatum commodi eius omnis, quas ratione. Iure minus voluptas consequatur! Rem debitis numquam atque ducimus ipsam dignissimos rerum dolores hic quas blanditiis. Possimus.</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-xl-5">
+								<ul class="accordion-list">
+									<li class="accordion-list__item">
+										<div class="accordion">
+											<div class="accordion__header">
+												<button class="accordion__toggle" data-accordion="data-accordion" aria-expanded="false">
+													<h3 class="accordion__title">Tot wanneer kan ik meedoen?</h3>
+													<div class="accordion__toggle-icon">
+														<svg>
+															<use xlink:href="./images/sprites.svg#triangle-down"></use>
+														</svg>
+													</div>
+												</button>
+											</div>
+											<div class="accordion__content">Quam voluptate consequatur temporibus dicta quisquam aperiam illo harum alias eligendi adipisci non eum sit odio, beatae iusto ab qui, odit quia recusandae id quo corporis? Hic, porro eaque! Atque, corporis fuga magni neque voluptate deserunt delectus perspiciatis quibusdam quia nulla quis odio consequuntur pariatur nostrum quod mollitia! Odit laborum dolorem iure neque optio vitae amet ex sequi consectetur doloribus deserunt possimus pariatur facilis facere rerum a laudantium molestiae, voluptatum commodi eius omnis, quas ratione. Iure minus voluptas consequatur! Rem debitis numquam atque ducimus ipsam dignissimos rerum dolores hic quas blanditiis. Possimus.</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-xl-5 offset-xl-1">
+								<ul class="accordion-list">
+									<li class="accordion-list__item">
+										<div class="accordion">
+											<div class="accordion__header">
+												<button class="accordion__toggle" data-accordion="data-accordion" aria-expanded="false">
+													<h3 class="accordion__title">Wat krijg ik?</h3>
+													<div class="accordion__toggle-icon">
+														<svg>
+															<use xlink:href="./images/sprites.svg#triangle-down"></use>
+														</svg>
+													</div>
+												</button>
+											</div>
+											<div class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate consequatur temporibus dicta quisquam aperiam illo harum alias eligendi adipisci non eum sit odio, beatae iusto ab qui, odit quia recusandae id quo corporis? Hic, porro eaque! Atque, corporis fuga magni neque voluptate deserunt delectus perspiciatis quibusdam quia nulla quis odio consequuntur pariatur nostrum quod mollitia! Odit laborum dolorem iure neque optio vitae amet ex sequi consectetur doloribus deserunt possimus pariatur facilis facere rerum a laudantium molestiae, voluptatum commodi eius omnis, quas ratione. Iure minus voluptas consequatur! Rem debitis numquam atque ducimus ipsam dignissimos rerum dolores hic quas blanditiis. Possimus.</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<p class="accordions__description">Deze aanbieding is geldig tot 31 december 2025</p>
+					</div>
+				</div>
+				<div class="section background-secondary feedback" id="form">
+					<div class="container-lg">
+						<div class="feedback__wrapper">
+							<h2>Ben jij klaar om<br /> het<span class="scribble">&nbsp;verschil<svg width="181" height="53" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg" data-scrollspy><path fill="none" d="M60.7168 50.916C78.0519 51.2259 95.7774 49.5133 113.024 48.4042C130.27 47.295 151.172 46.0554 166.821 37.1661C176.456 31.6856 184.298 20.1865 172.818 13.0424C162.598 6.68124 146.239 4.91968 134.298 3.51695C118.897 1.70645 103.354 1.18451 87.8285 1.67383C63.3783 2.45675 35.3441 5.89832 13.2538 16.2393C6.99044 19.1753 1.25938 23.4487 1.50779 30.6091C1.82717 39.3843 12.7747 42.2061 20.635 44.2612C39.1234 49.0729 60.433 50.1168 79.4892 50.965C100.834 51.911 125.409 48.29 145.494 41.5047C154.614 38.422 168.347 32.2402 167.229 21.524C166.111 10.8079 147.108 9.58455 137.971 8.23076C123.457 6.07774 109.493 5.50686 94.8193 5.50686C83.162 5.50686 69.8014 3.85948 58.6409 6.7791" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>&nbsp;te maken?</span></h2>
+							<div class="feedback__formWraper row">
+								<p class="col-12 col-xl-8 col-xxl-6">Het kost je één minuut om je voucher te claimen. En levert je een dag designpower op. Meld je aan via het formulier en wij plannen snel een intake met je.</p>
+								<form class="feedback__form col-12 col-xl-4 col-xxl-6" action="/" method="post">
+									<div class="row">
+										<div class="col-12">
+											<input class="input full-width" type="text" name="name" placeholder="Naam*" required>
+										</div>
+										<div class="col-12">
+											<input class="input full-width" type="email" name="email" placeholder="E-mailadres*" required>
+										</div>
+										<div class="col-12">
+											<input class="input full-width" type="tel" name="tel" placeholder="Telefoonnummer*" required>
+										</div>
+										<div class="col-12">
+											<textarea class="textarea full-width" name="message" placeholder="Bericht (niet verplicht)*" rows="3" required></textarea>
+										</div>
+										<div class="col-12">
+											<button class="button button--gradient full-width text-center" type="submit">Verzenden
+												<div class="hero__image col-5 col-xl-6 offset-xl-2"></div>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="footer"><img class="footer__image" src="images/hero-form.png" alt="footer image."><img class="footer__logo" src="images/logo-engine.svg" alt="logo Engine." width="249" height="46"></div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="./js/landing.js?v=1769357478737"></script>
+	</body>
 </html>

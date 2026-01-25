@@ -2,7 +2,7 @@
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
-  padding: 12px 37px;
+  padding: 9px 37px 7px;
   background-color: $color-primary;
   outline: none;
   border: none;
@@ -14,5 +14,9 @@
   &:active {
     box-shadow: 0px 0px 30px 0px rgba(255, 221, 149, 0.6);
     background: linear-gradient(90.00deg, rgba(240, 9, 28, 1), rgba(232.4154815673828, 122.9040298461914, 5.8400678634643555, 1) 60%);
+  }
+
+  @include tablet {
+    padding: 12px 37px;
   }
 }

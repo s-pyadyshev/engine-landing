@@ -17,6 +17,7 @@
       grid-area: subtitle;
       margin-bottom: 48px;
       line-height: 25px;
+      font-size: 15px;
 
       @include tablet {
         line-height: 30px;
@@ -54,10 +55,11 @@
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0;
-    line-height: 1.5;
+    line-height: 1.2;
 
     @include tablet {
       font-size: 32px;
+      line-height: 1.5;
     }
 
     @include desktop {
@@ -132,6 +134,17 @@
       "contentTree contentTree contentTree contentTree contentTree contentTree contentTree contentTree"
       "titleTwo titleTwo titleTwo titleTwo titleTwo titleTwo titleTwo titleTwo";
 
+    @media (max-width: 768px) and (orientation: landscape) {
+      grid-template-areas:
+        "subtitle subtitle subtitle subtitle . contentOne contentOne contentOne contentOne contentOne"
+        "titleOne titleOne titleOne titleOne . contentOne contentOne contentOne contentOne contentOne"
+        "contentTwo contentTwo contentTwo contentTwo . contentOne contentOne contentOne contentOne contentOne"
+        "contentTwo contentTwo contentTwo contentTwo . contentTree contentTree contentTree contentTree contentTree"
+        ". . . . . contentTree contentTree contentTree contentTree contentTree"
+        "titleTwo titleTwo titleTwo titleTwo . contentTree contentTree contentTree contentTree contentTree"
+        "titleTwo titleTwo titleTwo titleTwo . . . . . .";
+    }
+
     @include tablet {
       margin-bottom: 169px;
       grid-template-columns: repeat(10, 10%);
@@ -188,7 +201,11 @@
 
   &__contentThree {
     grid-area: contentTree;
-    margin-bottom: 67px;
+    margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 67px;
+    }
   }
 
   &__imagesGroup {
@@ -202,7 +219,7 @@
     img:nth-child(1) {
       position: relative;
       z-index: 2;
-      width: 53%;
+      width: 56%;
       margin: 0 0 0 auto;
       bottom: -20px;
 
@@ -220,7 +237,7 @@
     img:nth-child(2) {
       position: relative;
       z-index: 1;
-      width: 53%;
+      width: 59%;
 
       @include tablet {
         width: 59%;
@@ -253,7 +270,7 @@
   }
 
   &__descriptionOne {
-    padding-top: 27px;
+    padding-top: 16px;
 
     @include tablet {
       padding-top: 29px;
@@ -271,7 +288,7 @@
   &__descriptionTwo {
     grid-area: description;
     display: flex;
-    padding-top: 14px;
+    padding-top: 16px;
     max-width: 475px;
 
     @include tablet {
@@ -284,7 +301,7 @@
   }
 
   &__descriptionThree {
-    padding-top: 14px;
+    padding-top: 20px;
     grid-area: description;
     display: flex;
     align-items: flex-start;
@@ -308,6 +325,7 @@
       margin: 0 13px;
       padding: 0;
       flex: 0 1 57px;
+      margin-right: 0;
 
       @include tablet {
         width: 79px;

@@ -7,6 +7,10 @@ $header-height: 80px;
     conic-gradient(from 8.92deg at 33% 80%, rgb(1, 0, 0) -22deg, rgba(240, 9, 28, 0.6) 0deg, rgb(1, 0, 0) 336.4deg, rgba(240, 9, 28, 0.6) 356deg),
     linear-gradient($color-secondary);
 
+  @media (min-height: 320px) and (max-height: 800px) {
+    height: 100%;
+  }
+
   @include tablet {
     display: flex;
     flex-direction: column;
@@ -35,8 +39,12 @@ $header-height: 80px;
       object-fit: cover;
       height: 360px;
 
+      @media (min-height: 668px) and (max-height: 800px) {
+        height: 100%;
+      }
+
       @include tablet {
-        height: 75vh;
+        height: 100%;
         margin-left: -16px;
       }
 
@@ -62,6 +70,8 @@ $header-height: 80px;
   }
 
   &__titles {
+    padding-left: 2px;
+
     @include tablet {
       padding-top: 0;
       padding-left: 42px;
@@ -77,7 +87,7 @@ $header-height: 80px;
       font-size: 26px;
       font-weight: 700;
       line-height: 29px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
 
       @include tablet {
         font-size: 46px;
@@ -170,10 +180,10 @@ $header-height: 80px;
     font-size: 9px;
     font-weight: 400;
     line-height: 11px;
-    letter-spacing: 5.5px;
+    letter-spacing: 4.5px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 31px;
+    margin-bottom: 22px;
     max-width: 393px;
 
     svg {
@@ -222,6 +232,12 @@ $header-height: 80px;
       margin-top: 10px;
       margin-bottom: 10px;
       height: 28px;
+
+      &:first-child {
+        @media (max-width: 767px) {
+          padding-left: 0 !important;
+        }
+      }
 
       @include tablet {
         margin-top: 0;

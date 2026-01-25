@@ -44,12 +44,16 @@
   }
 
   li {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
   }
 
   .button {
     font-family: $font-secondary;
-    padding: 12px 37px;
+    padding: 8px 37px;
     margin-top: 19px;
     width: 197px;
 
@@ -72,7 +76,7 @@
     grid-template-columns: repeat(8, 12.5%);
     grid-template-areas:
       "imageOne imageOne imageOne imageOne imageOne imageOne imageOne imageOne"
-      ". infoList infoList infoList infoList infoList infoList ."
+      "infoList infoList infoList infoList infoList infoList infoList infoList"
       "imageTwo imageTwo imageTwo imageTwo imageTwo imageTwo imageTwo imageTwo"
       "faq faq faq faq faq faq faq faq"
       "imageTree imageTree imageTree imageTree imageTree imageTree imageTree imageTree";
@@ -81,7 +85,7 @@
       grid-template-columns: repeat(10, 10%);
       grid-template-areas:
         "imageOne imageOne imageOne imageOne imageOne imageOne imageOne . . ."
-        ". . . infoList infoList infoList infoList infoList infoList infoList"
+        "infoList infoList infoList infoList infoList infoList infoList infoList infoList infoList"
         ". imageTwo imageTwo imageTwo imageTwo imageTwo imageTwo imageTwo imageTwo ."
         "faq faq faq faq faq faq faq faq faq faq"
         "imageTree imageTree imageTree imageTree imageTree imageTree imageTree imageTree imageTree imageTree";
@@ -99,25 +103,26 @@
 
   &__imageOne {
     grid-area: imageOne;
-    max-width: 105%;
+    max-width: 110%;
     margin-bottom: 48px;
 
     @include tablet {
-      max-width: 109%;
       margin-bottom: 54px;
     }
   }
 
   &__imageTwo {
     grid-area: imageTwo;
-    max-width: 105%;
+    max-width: 110%;
     margin-bottom: 31px;
+    margin-left: -10px;
 
     @include tablet {
       max-width: 107%;
       margin-bottom: 38px;
       position: relative;
       left: -40px;
+      margin-left: 0;
     }
   }
 
@@ -140,9 +145,11 @@
   &__list {
     grid-area: infoList;
     margin-bottom: 30px;
+    padding-left: 32px;
 
     @include tablet {
       margin-bottom: 7px;
+      padding-left: 0;
     }
 
     @include desktop {
@@ -154,7 +161,7 @@
       font-size: 26px;
       font-weight: 700;
       line-height: 31px;
-      margin-bottom: 32px;
+      margin-bottom: 30px;
 
       @include tablet {
         font-size: 32px;
@@ -205,7 +212,7 @@
 
     ul {
       margin-bottom: 11px;
-      margin-left: 31px;
+      margin-left: 27px;
 
       @include tablet {
         margin-bottom: 0;
@@ -216,7 +223,7 @@
   &__faq {
     grid-area: faq;
     background-color: black;
-    padding: 44px 12.5% 24px;
+    padding: 44px 32px 24px 26px;
     margin-bottom: 41px;
 
     @include tablet {
@@ -273,10 +280,11 @@
         position: relative;
         padding-left: 42px;
         margin-bottom: 20px;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 20px;
 
         @include tablet {
+          font-size: 14px;
           padding-left: 70px;
           line-height: 26px;
         }

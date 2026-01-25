@@ -51,7 +51,7 @@
     }
   }
 
-  &__discription {
+  &__description {
     font-size: 13px;
     line-height: 16px;
     font-style: italic;
@@ -60,5 +60,13 @@
       font-size: 20px;
       line-height: 24px;
     }
+  }
+}
+
+.accordion__header {
+  margin-right: -4px;
+
+  @include tablet {
+    margin-right: 7px;
   }
 }

@@ -150,6 +150,11 @@
     @include tablet {
       margin-bottom: 7px;
       padding-left: 0;
+      margin-left: 30px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-left: 250px;
     }
 
     @include desktop {
@@ -181,11 +186,8 @@
         background: linear-gradient(90deg, $color-primary 0%, rgba(232, 123, 6, 1) 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        /* Safari/Chrome */
-        color: transparent;
-        /* Firefox */
-        -webkit-text-fill-color: transparent;
-        /* Safari/Chrome */
+        color: #fff;
+        -webkit-text-fill-color: #fff;
       }
 
       .scribble svg {

@@ -2,7 +2,7 @@ $header-height: 80px;
 
 .hero {
   padding-top: calc($header-height + 28px + 4px);
-  margin-top: -(calc($header-height + 27px));
+  margin-top: -(calc($header-height + 28px));
   background-image:
     conic-gradient(from 8.92deg at 33% 80%, rgb(1, 0, 0) -22deg, rgba(240, 9, 28, 0.6) 0deg, rgb(1, 0, 0) 336.4deg, rgba(240, 9, 28, 0.6) 356deg),
     linear-gradient($color-secondary);
@@ -17,7 +17,7 @@ $header-height: 80px;
     align-items: flex-start;
     height: 100vh;
     padding-top: calc($header-height + 82px);
-    margin-top: -(calc($header-height + 89px));
+    margin-top: -(calc($header-height + 90px));
     position: relative;
     background-image:
       conic-gradient(from 10.92deg at 29% 114%, rgba(1, 0, 0, 1) -22deg, rgba(240, 9, 28, 0.6) 0deg, rgba(1, 0, 0, 1) 338.4deg, rgba(240, 9, 28, 0.6) 360deg),
@@ -26,7 +26,7 @@ $header-height: 80px;
 
   @include desktop-l {
     padding-top: calc($header-height + 106px);
-    margin-top: -(calc($header-height + 105px));
+    margin-top: -(calc($header-height + 106px));
     background-image:
       conic-gradient(from 9.7deg at 30% 102%, rgba(1, 0, 0, 1) -47deg, rgba(240, 9, 28, 0.6) 0deg, rgba(1, 0, 0, 1) 313.2deg, rgba(240, 9, 28, 0.6) 360deg),
       linear-gradient($color-secondary);

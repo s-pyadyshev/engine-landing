@@ -116,48 +116,66 @@
 @keyframes fadeInRightResponse {
   0% {
     opacity: 0;
-    transform: translate3d(100%, -70px, 0);
-
-    @include tablet {
-      transform: translate3d(100%, -140px, 0);
-    }
+    transform: translate3d(100%, -80px, 0);
+    transition-timing-function: ease-in-out;
   }
 
   20% {
     opacity: 1;
-    transform: translate3d(-60px, -70px, 0);
-
-    @include tablet {
-
-      transform: translate3d(-60px, -140px, 0);
-    }
+    transform: translate3d(-60px, -80px, 0);
   }
 
   30% {
     opacity: 1;
-    transform: translate3d(0, -70px, 0);
-
-    @include tablet {
-      transform: translate3d(0, -140px, 0);
-    }
+    transform: translate3d(0, -80px, 0);
   }
 
   60% {
     opacity: 1;
-    transform: translate3d(0, -70px, 0);
-
-    @include tablet {
-      transform: translate3d(0, -140px, 0);
-    }
+    transform: translate3d(0, -80px, 0);
   }
 
   70% {
     opacity: 1;
-    transform: translate3d(0, -85px, 0);
+    transform: translate3d(0, -95px, 0);
+  }
 
-    @include tablet {
-      transform: translate3d(0, -155px, 0);
-    }
+  80% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRightResponseTablet {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, -160px, 0);
+    transition-timing-function: ease-in-out;
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate3d(-60px, -160px, 0);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translate3d(0, -160px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -160px, 0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate3d(0, -180px, 0);
   }
 
   80% {
@@ -174,6 +192,10 @@
 .animate__fadeInRightResponse {
   animation-name: fadeInRightResponse;
   animation-delay: 600ms;
+
+  @include tablet {
+    animation-name: fadeInRightResponseTablet;
+  }
 }
 
 @keyframes fadeInUpResponse {

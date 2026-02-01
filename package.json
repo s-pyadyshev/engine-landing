@@ -5,7 +5,8 @@
   "description": "Frontend boilerplate",
   "repository": "ninelines-team/ninelines-template",
   "browserslist": [
-    "defaults"
+    "safari >= 5.1",
+    "chrome >= 10"
   ],
   "scripts": {
     "prepare": "husky install",

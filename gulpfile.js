@@ -4,10 +4,8 @@ import { hideBin } from 'yargs/helpers';
 import path from 'path';
 import webpackConfig from './webpack.config.js';
 import gcmq from 'gulp-group-css-media-queries';
-import { deleteAsync } from 'del';
 import imagemin from 'gulp-imagemin';
 import imageminMozjpeg from 'imagemin-mozjpeg';
-import { createRequire } from 'module';
 import gulpSass from 'gulp-sass';
 import sassCompiler from 'sass';
 import autoprefixer from 'autoprefixer';
@@ -74,8 +72,8 @@ if (argv.ci) {
 const errorHandler = argv.throwErrors
   ? false
   : argv.notify
-  ? notify.onError('<%= error.message %>')
-  : null;
+    ? notify.onError('<%= error.message %>')
+    : null;
 
 const svgoConfig =
   (minify = argv.minifySvg) =>
